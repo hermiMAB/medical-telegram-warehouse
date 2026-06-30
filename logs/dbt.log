@@ -1,0 +1,223 @@
+[0m04:20:49.143011 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002684AD8CE30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002684DEBBAA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002684D9C2990>]}
+
+
+============================== 04:20:49.160840 | c8fa7e8d-66f8-4c8e-92ef-4e908ef638cf ==============================
+[0m04:20:49.160840 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m04:20:49.164015 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Hermela\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt init medical_warehouse', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m04:20:49.305144 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\Hermela\.dbt
+[0m04:20:49.319335 [debug] [MainThread]: Starter project path: C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\include\starter_project
+[0m04:20:49.461119 [info ] [MainThread]: Setting up your profile.
+[0m12:50:48.105593 [info ] [MainThread]: Profile medical_warehouse written to C:\Users\Hermela\.dbt\profiles.yml using target's profile_template.yml and your supplied values.
+[0m12:50:48.233308 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m12:50:48.244011 [info ] [MainThread]: dbt version: 1.12.0-b3
+[0m12:50:48.247635 [info ] [MainThread]: python version: 3.12.1
+[0m12:50:48.251878 [info ] [MainThread]: python path: C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Scripts\python.exe
+[0m12:50:48.254223 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:50:48.488128 [info ] [MainThread]: Using profiles dir at C:\Users\Hermela\.dbt
+[0m12:50:48.489310 [info ] [MainThread]: Using profiles.yml file at C:\Users\Hermela\.dbt\profiles.yml
+[0m12:50:48.490468 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Hermela\Desktop\10academy\Week 8\medical_warehouse\dbt_project.yml
+[0m12:50:48.495194 [info ] [MainThread]: adapter type: postgres
+[0m12:50:48.496981 [info ] [MainThread]: adapter version: 1.10.2
+[0m12:50:48.769925 [info ] [MainThread]: Configuration:
+[0m12:50:48.770927 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:50:48.771977 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:50:48.771977 [info ] [MainThread]: Required dependencies:
+[0m12:50:48.771977 [debug] [MainThread]: Executing "git --help"
+[0m12:50:48.872563 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:50:48.874033 [debug] [MainThread]: STDERR: "b''"
+[0m12:50:48.875050 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:50:48.877052 [info ] [MainThread]: Connection:
+[0m12:50:48.878053 [info ] [MainThread]:   host: localhost
+[0m12:50:48.878053 [info ] [MainThread]:   port: 5432
+[0m12:50:48.879092 [info ] [MainThread]:   user: postgres
+[0m12:50:48.880094 [info ] [MainThread]:   database: telegram_warehouse
+[0m12:50:48.881103 [info ] [MainThread]:   schema: 1
+[0m12:50:48.882092 [info ] [MainThread]:   connect_timeout: 10
+[0m12:50:48.883092 [info ] [MainThread]:   role: None
+[0m12:50:48.885328 [info ] [MainThread]:   search_path: None
+[0m12:50:48.887353 [info ] [MainThread]:   keepalives_idle: 0
+[0m12:50:48.889351 [info ] [MainThread]:   sslmode: None
+[0m12:50:48.892825 [info ] [MainThread]:   sslcert: None
+[0m12:50:48.896000 [info ] [MainThread]:   sslkey: None
+[0m12:50:48.898560 [info ] [MainThread]:   sslrootcert: None
+[0m12:50:48.900281 [info ] [MainThread]:   application_name: dbt
+[0m12:50:48.902863 [info ] [MainThread]:   retries: 1
+[0m12:50:48.908666 [info ] [MainThread]: Registered adapter: postgres=1.10.2
+[0m12:50:49.957410 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m12:50:58.837820 [debug] [MainThread]: Using postgres connection "debug"
+[0m12:50:58.837820 [debug] [MainThread]: On debug: select 1 as id
+[0m12:50:58.839217 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:50:59.094357 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m12:50:59.216985 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m12:50:59.217986 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m12:50:59.221512 [debug] [MainThread]: On debug: No close available on handle
+[0m12:50:59.225537 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:50:59.227933 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:50:59.229929 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:50:59.233919 [info ] [MainThread]: Your new dbt project "medical_warehouse" was created!
+Initialized new project in C:\Users\Hermela\Desktop\10academy\Week 8\medical_warehouse\medical_warehouse
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m12:50:59.234936 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m12:50:59.251688 [debug] [MainThread]: Command `dbt init` succeeded at 12:50:59.249693 after 30610.70 seconds
+[0m12:50:59.254715 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m12:50:59.264615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002684E748770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000268506E3560>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002684EC80CE0>]}
+[0m12:50:59.270130 [debug] [MainThread]: Flushing usage events
+[0m12:51:01.029400 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:45:27.824518 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020290B5BB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020290506E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020290817E00>]}
+
+
+============================== 01:45:27.840913 | 82e05fd0-0042-4b48-977b-a52037ab476f ==============================
+[0m01:45:27.840913 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m01:45:27.840913 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Hermela\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt init medical_warehouse', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m01:45:27.922847 [debug] [MainThread]: Starter project path: C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\include\starter_project
+[0m01:45:28.002432 [info ] [MainThread]: Setting up your profile.
+[0m01:46:55.854453 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m01:46:56.018124 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\cli\requires.py", line 190, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\cli\requires.py", line 136, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\cli\main.py", line 503, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\task\init.py", line 360, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\task\init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\task\init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\task\init.py", line 165, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\dbt\task\init.py", line 131, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\click\termui.py", line 218, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Lib\site-packages\click\termui.py", line 201, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m01:46:56.022416 [debug] [MainThread]: Command `dbt init` failed at 01:46:56.022416 after 88.83 seconds
+[0m01:46:56.024441 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002028D3073B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002029295DD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202926DB1D0>]}
+[0m01:46:56.025462 [debug] [MainThread]: Flushing usage events
+[0m01:46:57.476863 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m01:47:07.490286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB222A62D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB229FBF80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB22C67620>]}
+
+
+============================== 01:47:07.499301 | 64891a0a-2bd0-404c-878a-f4880a1d39c5 ==============================
+[0m01:47:07.499301 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m01:47:07.500437 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Hermela\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init medical_warehouse', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m01:47:07.572764 [info ] [MainThread]: A project called medical_warehouse already exists here.
+[0m01:47:07.572764 [debug] [MainThread]: Command `dbt init` succeeded at 01:47:07.572764 after 0.56 seconds
+[0m01:47:07.577349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB22DE8800>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB22DEA8A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BB22DEAA20>]}
+[0m01:47:07.577349 [debug] [MainThread]: Flushing usage events
+[0m01:47:08.926949 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:38:16.327206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021955C96300>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002195389D820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021955B930B0>]}
+
+
+============================== 02:38:16.340908 | 2f2d5e7d-7b2b-476b-90ae-54ab4c8fae41 ==============================
+[0m02:38:16.340908 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m02:38:16.342908 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Hermela\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m02:38:16.425823 [info ] [MainThread]: dbt version: 1.12.0-b3
+[0m02:38:16.426837 [info ] [MainThread]: python version: 3.12.1
+[0m02:38:16.428836 [info ] [MainThread]: python path: C:\Users\Hermela\Desktop\10academy\Week 8\.venv\Scripts\python.exe
+[0m02:38:16.430838 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m02:38:16.554510 [info ] [MainThread]: Using profiles dir at C:\Users\Hermela\.dbt
+[0m02:38:16.554510 [info ] [MainThread]: Using profiles.yml file at C:\Users\Hermela\.dbt\profiles.yml
+[0m02:38:16.556018 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Hermela\Desktop\10academy\Week 8\dbt_project.yml
+[0m02:38:16.558026 [info ] [MainThread]: adapter type: postgres
+[0m02:38:16.559027 [info ] [MainThread]: adapter version: 1.10.2
+[0m02:38:16.559540 [info ] [MainThread]: Configuration:
+[0m02:38:16.561049 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:38:16.562647 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m02:38:16.563657 [info ] [MainThread]: Required dependencies:
+[0m02:38:16.564659 [debug] [MainThread]: Executing "git --help"
+[0m02:38:16.666092 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:38:16.667089 [debug] [MainThread]: STDERR: "b''"
+[0m02:38:16.668094 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:38:16.669097 [info ] [MainThread]: Connection:
+[0m02:38:16.670097 [info ] [MainThread]:   host: localhost
+[0m02:38:16.671104 [info ] [MainThread]:   port: 5432
+[0m02:38:16.671630 [info ] [MainThread]:   user: postgres
+[0m02:38:16.671630 [info ] [MainThread]:   database: telegram_warehouse
+[0m02:38:16.673144 [info ] [MainThread]:   schema: staging
+[0m02:38:16.675161 [info ] [MainThread]:   connect_timeout: 10
+[0m02:38:16.676165 [info ] [MainThread]:   role: None
+[0m02:38:16.677162 [info ] [MainThread]:   search_path: None
+[0m02:38:16.677162 [info ] [MainThread]:   keepalives_idle: 0
+[0m02:38:16.678159 [info ] [MainThread]:   sslmode: None
+[0m02:38:16.679158 [info ] [MainThread]:   sslcert: None
+[0m02:38:16.679158 [info ] [MainThread]:   sslkey: None
+[0m02:38:16.680156 [info ] [MainThread]:   sslrootcert: None
+[0m02:38:16.681155 [info ] [MainThread]:   application_name: dbt
+[0m02:38:16.683159 [info ] [MainThread]:   retries: 1
+[0m02:38:16.686161 [info ] [MainThread]: Registered adapter: postgres=1.10.2
+[0m02:38:16.989599 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m02:38:17.287013 [debug] [MainThread]: Using postgres connection "debug"
+[0m02:38:17.288014 [debug] [MainThread]: On debug: select 1 as id
+[0m02:38:17.289014 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:38:17.455259 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+
+[0m02:38:17.537032 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m02:38:17.537032 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m02:38:17.538349 [debug] [MainThread]: On debug: No close available on handle
+[0m02:38:17.540206 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m02:38:17.540866 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m02:38:17.542373 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\Hermela\Desktop\10academy\Week 8\dbt_project.yml> not found
+
+[0m02:38:17.544382 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: FATAL:  password authentication failed for user "postgres"
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m02:38:17.546899 [debug] [MainThread]: Command `dbt debug` failed at 02:38:17.545891 after 1.60 seconds
+[0m02:38:17.548414 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m02:38:17.549414 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002195684C1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002195890D880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002195824C800>]}
+[0m02:38:17.550923 [debug] [MainThread]: Flushing usage events
+[0m02:38:18.763682 [debug] [MainThread]: An error was encountered while trying to flush usage events
